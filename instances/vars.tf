@@ -14,3 +14,8 @@ variable "instance_type" {
  description = "The type of the instance and how powerful it is"
 }
 
+variable "tag" {
+ description = "Tag the instance"
+}
+
+

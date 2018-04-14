@@ -22,5 +22,8 @@ resource "aws_instance" "kereza_ec2" {
   network_interface_id = "${aws_network_interface.kereza_ani.id}"
   device_index = 0
  }
+ tags {
+    Name = "${var.tag}"
+  }
 }
 
